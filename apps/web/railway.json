@@ -5,6 +5,6 @@
         "buildCommand": "pnpm build"
     },
     "deploy": {
-        "startCommand": "npx http-server dist/prenda-del-alma/browser -p $PORT --proxy http://localhost:$PORT?"
+        "startCommand": "npx http-server dist -p $PORT --proxy http://localhost:$PORT?"
     }
 }
