@@ -1,0 +1,24 @@
+{
+  "name": "prenda-del-alma-monorepo",
+  "private": true,
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "dev:web": "turbo dev --filter @prenda/web",
+    "build:web": "turbo build --filter @prenda/web",
+    "dev:backend": "turbo dev --filter @prenda/backend",
+    "build:backend": "turbo build --filter @prenda/backend"
+  },
+  "packageManager": "pnpm@10.28.0",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "turbo": "latest"
+  },
+  "pnpm": {
+    "overrides": {
+      "react": "19.0.0",
+      "react-dom": "19.0.0"
+    }
+  }
+}
